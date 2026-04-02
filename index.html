@@ -1,148 +1,65 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>PayPal Invoice</title>
+    <title>Message</title>
     <style>
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: white;
-            padding: 40px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
             margin: 0;
+            padding: 20px;
         }
-        .invoice {
-            max-width: 800px;
-            margin: auto;
-            border: 1px solid #ccc;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        .card {
+            max-width: 480px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
         }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 2px solid #0070ba;
-            padding-bottom: 15px;
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+        .message {
+            color: #333;
+            line-height: 1.5;
             margin-bottom: 20px;
-        }
-        .paypal {
-            font-size: 28px;
-            font-weight: bold;
-            color: #003087;
-        }
-        .help {
-            text-align: right;
             font-size: 14px;
         }
-        .help .phone {
-            font-size: 20px;
-            font-weight: bold;
-            color: #1a2c3e;
-        }
-        .dear {
-            font-size: 16px;
-            margin: 15px 0 5px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #aaa;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background: #f2f2f2;
-        }
-        .totals {
-            width: 300px;
-            margin-left: auto;
-            margin-top: 20px;
-        }
-        .totals td {
-            border: none;
-            padding: 5px;
-        }
-        .support-line {
-            margin: 20px 0 10px 0;
-            font-size: 15px;
-            font-weight: 500;
-            background: #f0f7ff;
-            padding: 10px 15px;
-            border-radius: 8px;
-            color: #004080;
-            border: 1px solid #cce4ff;
-        }
-        .note {
-            margin-top: 20px;
-            font-size: 13px;
-            background: #fff3e0;
+        .contact {
+            background: #f9f9f9;
             padding: 12px;
-            border-left: 4px solid #ff9900;
+            border-radius: 12px;
+            font-size: 14px;
+            border-left: 3px solid #2c7da0;
         }
         .footer {
-            margin-top: 30px;
+            margin-top: 20px;
+            font-size: 11px;
+            color: #888;
             text-align: center;
-            font-size: 12px;
-            color: #666;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
         }
     </style>
 </head>
 <body>
-<div class="invoice">
-    <div class="header">
-        <div class="paypal">PAYPAL</div>
-        <div class="help">
-            HELP DESK: +1 (806) 243-0293<br>
-            Date: 2026-04-02
-        </div>
+<div class="card">
+    <div class="title">📋 Update</div>
+    <div class="message">
+        Hello,<br><br>
+        We noticed a recent login from a new device. If this was you, no further action is needed.
+        If you didn't recognize this activity, please reach out to our support team.
     </div>
-
-    <div class="dear">Dear user@example.com,</div>
-    <p>Thank you for your business. Below is the detailed invoice for your recent PayPal transaction.</p>
-
-    <p><strong>Invoice No:</strong> INV-1001-9823<br>
-    <strong>Invoice Date:</strong> 2026-04-02<br>
-    <strong>Customer ID:</strong> 4587~A9B2</p>
-
-    <table>
-        <tr>
-            <th>Description</th>
-            <th>Qty</th>
-            <th>Unit Price</th>
-            <th>Amount</th>
-        </tr>
-        <tr>
-            <td>HP OmniBook-XT (1 year warranty)</td>
-            <td>1</td>
-            <td>$749.99</td>
-            <td>$749.99</td>
-        </tr>
-    </table>
-
-    <table class="totals">
-        <tr><td><strong>Subtotal:</strong></td><td>$749.99</td></tr>
-        <tr><td><strong>Tax (0%):</strong></td><td>$0.00</td></tr>
-        <tr><td><strong>Total (USD):</strong></td><td><strong>$749.99</strong></td></tr>
-    </table>
-
-    <!-- নতুন যোগ করা লাইন -->
-    <div class="support-line">
-        📞 Please contact our customer support team: +1 (806) 243-0293
+    <div class="contact">
+        📞 Support: <strong>+1 (970) 303-2610</strong><br>
+        <span style="font-size: 12px; color: #666;">Mon-Fri, 9am - 6pm ET</span>
     </div>
-
-    <div class="note">
-        <strong>NOTE:</strong> If you did not authorize this transaction, please contact PayPal Support within 24 hours.
-        This invoice includes all applicable fees. Your account was charged on 2026-04-02. Keep this for your records.
-    </div>
-
     <div class="footer">
-        HELP DESK: +1 (806) 243-0293<br>
-        © 2026 PayPal. All rights reserved.
+        This is an automated message. No reply needed.
     </div>
 </div>
 </body>
